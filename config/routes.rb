@@ -1,6 +1,18 @@
 Rails.application.routes.draw do
 
-  devise_for :users
+  get 'playlists/index'
+
+  get 'playlists/show'
+
+  get 'playlists/new'
+
+  post 'playlists/create'
+
+  get 'playlists/delete'
+
+  get 'playlists/update'
+
+devise_for :users
 root 'artists#index'
 resources :artists
 resources :songs
