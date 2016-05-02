@@ -1,5 +1,11 @@
 <h1>Artists</h1>
 
-<% @artists.each do |artist| %>
-  <p><%= link_to artist.name, artist %></p>
-<% end %>
+<div class = "row">
+  <% @artists.each do |artist| %>
+<%= artist.image %>
+    <div class="col-md-4">
+      <%= link_to (image_tag artist.image.url, class: "img-responsive"), artist %>
+      <p><%= link_to artist.name, artist %></p>
+    </div>
+  <% end %>
+</div>

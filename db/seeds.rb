@@ -6,6 +6,9 @@ artists = [
     %{"Pop legend Madonna is known for her constant reinvention as a performer. Her biggest hits include Like a Prayer, Vogue, Secret and Ray of Light, among many others."}],
 
   [ "Adele", "adele.jpg",
+    %{"Singer Adele is a Grammy Award-winning artist whose throwback, soulful sound has made her an international success with hits like Rolling in the Deep and Someone Like You.}],
+
+  [ "Tina Turner", "tina-turner-3.jpg",
     %{"Singer Adele is a Grammy Award-winning artist whose throwback, soulful sound has made her an international success with hits like Rolling in the Deep and Someone Like You.}]
 
 ]
@@ -33,6 +36,14 @@ artist_songs["Madona"] = [
 ]
 
 artist_songs["Adele"] = [
+  ["Hello", 3.34],
+  ["Someone Like You", 2.34],
+  ["Skyfall", 4.00],
+  ["Set Fire to the Rain", 3.34],
+  ["Rumour Has It", 3.34]
+]
+
+artist_songs["Tina Turner"] = [
   ["Hello", 3.34],
   ["Someone Like You", 2.34],
   ["Skyfall", 4.00],

@@ -1,0 +1,28 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+body {
+  background: #efefef;
+}
+
+.artist-name{
+  font-size: 50px;
+}
+
+.artist-bio{
+  font-size: 20px;
+}
+
+.artist{
+  display: inline-block;
+}
+
+.songs{
+  background-color: white;
+  border-bottom: 1px solid gray;
+  padding: 2px;
+}
+
+.button-text{
+  color: white;
+}

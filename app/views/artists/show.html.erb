@@ -1,2 +1,25 @@
-<h1>Artists#show</h1>
-<p>Find me in app/views/artists/show.html.erb</p>
+<div class="row">
+  <div class="col-xs-4"><%= image_tag @artist.image.url, class: "img-responsive" %></div>
+  <div class="col-xs-6 col-sm-3 artist-name">
+    <%= @artist.name%>
+    <br>
+    <div class = "artist-bio"><%= @artist.bio %></div>
+  </div>
+</div>
+
+
+  <% @songs.each do |song| %>
+  <div class = "songs">
+    <h4><%= song.title %></h4>
+      <p>by</p> <%= @artist.name %>
+    <p><%= song.duration %></p>
+
+    <audio controls>
+      <source src="horse.ogg" type="audio/ogg">
+      <source src="horse.mp3" type="audio/mpeg">
+    </audio>
+
+    <div type="button" class="btn btn-primary"><%= link_to "add", class: "button-text" %></div>
+  </div>
+
+  <% end %>
