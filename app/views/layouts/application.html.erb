@@ -32,9 +32,9 @@
               <li><%= link_to "Sign up", new_user_registration_path %></li>
               <li><%= link_to "Log in", new_user_session_path %></li>
             <% else %>
+              <li><%= link_to "Create a Playlist", new_playlist_path %></li>
+              <li><%= link_to "My Playlists", playlists_path %></li>
               <li><%= link_to "Log out", destroy_user_session_path, method: :delete %></li>
-              <li><%= link_to "Create a Playlist", playlists_new_path %></li>
-              <li><a href="#">My Playlist</a></li>
             <% end %>
       </ul>
       </div><!-- /.navbar-collapse -->

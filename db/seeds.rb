@@ -14,7 +14,7 @@ artists = [
 ]
 
 artists.each do |name, image, bio|
-  Artist.create( name: name, image: image, bio: bio )
+  Artist.create( name: name, image: File.open(File.join(Rails.root.join("test/fixtures/images/#{image}"))), bio: bio )
 end
 
 artist_songs = {}

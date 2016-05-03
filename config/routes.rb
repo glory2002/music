@@ -1,22 +1,10 @@
 Rails.application.routes.draw do
 
-  get 'playlists/index'
-
-  get 'playlists/show'
-
-  get 'playlists/new'
-
-  post 'playlists/create'
-
-  get 'playlists/delete'
-
-  get 'playlists/update'
-
 devise_for :users
 root 'artists#index'
 resources :artists
 resources :songs
-
+resources :playlists
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
