@@ -13,12 +13,6 @@
     <h4><%= song.title %></h4>
       <p>by</p> <%= @artist.name %>
     <p><%= song.duration %></p>
-
-    <audio controls>
-      <source src="horse.ogg" type="audio/ogg">
-      <source src="horse.mp3" type="audio/mpeg">
-    </audio>
-
     <div type="button" class="btn btn-primary"><%= link_to "add", class: "button-text" %></div>
   </div>
 

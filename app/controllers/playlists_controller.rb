@@ -15,7 +15,7 @@ class PlaylistsController < ApplicationController
   def create
     @playlist = Playlist.new(playlist_params)
       if @playlist.save == true
-        redirect_to playlists_index_path
+        redirect_to playlists_path
       else
         "error"
       end
