@@ -6,6 +6,7 @@ class PlaylistsController < ApplicationController
   end
 
   def show
+    
   end
 
   def new
@@ -14,11 +15,11 @@ class PlaylistsController < ApplicationController
 
   def create
     @playlist = Playlist.new(playlist_params)
-      if @playlist.save == true
-        redirect_to playlists_path
-      else
-        "error"
-      end
+    if @playlist.save == true
+      redirect_to playlists_path
+    else
+      "error"
+    end
   end
 
   def delete
