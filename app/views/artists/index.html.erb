@@ -2,9 +2,8 @@
 
 <div class = "row">
   <% @artists.each do |artist| %>
-<%= artist.image %>
     <div class="col-md-4">
-      <%= link_to (image_tag artist.image.url, class: "img-responsive"), artist %>
+      <%= link_to (image_tag artist.image, class: "img-responsive"), artist %>
       <p><%= link_to artist.name, artist %></p>
     </div>
   <% end %>
